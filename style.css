@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif; /* Встановлює шрифт для всього документа */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Висота вікна переглядача */
+    background-color: #f0f0f0; /* Легкий фоновий колір для сторінки */
+}
+
+header {
+    font-size: 40px;
+    background-color: blueviolet;
+    padding: 20px 0;
+    margin-bottom: auto;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center; /* Центрує текст всередині header */
+}
+
+header p {
+    display: inline; /* Розміщує пункти в рядку без додаткового відступу */
+    color: white; /* Робить текст білим для контрасту */
+    margin: 0; /* Усуває відступи навколо абзаців */
+    padding: 0; /* Усуває відступи всередині абзаців */
+    font-size: 40px;
+}
+
+header p + p {
+    margin-left: 5px; /* Встановлює менший відступ між абзацами */
+}
+
+.gold {
+    color: goldenrod;
+}
+
+.black {
+    color: black;
+}
+
+.container {
+    display: flex; /* Використовує Flexbox для розташування блоків в рядок */
+    gap: 20px; /* Відстань між блоками */
+    width: 80%; /* Ширина контейнера для блоків */
+    max-width: 1000px; /* Максимальна ширина контейнера */
+    margin-bottom: 500px;
+    padding: 20px; /* Внутрішні відступи для контейнера */
+    box-sizing: border-box; /* Включає відступи та межі у загальний розмір елемента */
+}
+
+.block {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 10px; /* Внутрішні відступи всередині блоку */
+    width: 100%; /* Ширина блоку на всю ширину контейнера */
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрує зображення і текст по горизонталі */
+}
+
+.block img {
+    border-radius: 5px; /* Завкруглені кути для зображень */
+    width: 100%; /* Зображення займає всю ширину блоку */
+    height: auto; /* Зберігає пропорції зображення */
+    max-height: 200px; /* Максимальна висота зображення */
+    object-fit: cover; /* Обрізає зображення, щоб заповнити область без деформації */
+    margin-bottom: 10px; /* Відступ між зображенням і текстом */
+}
+
+.block:nth-child(1) {
+    background-color: #ff6f61; /* Різний колір фону для кожного блока */
+}
+
+.block:nth-child(2) {
+    background-color: #6a1b9a;
+}
+
+.block:nth-child(3) {
+    background-color: #43a047;
+}
